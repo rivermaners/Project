@@ -22,6 +22,7 @@ nav ul{
 nav ul li{
     text-align: right;
     display: inline-block;
+    font-weight: bold;
 }
 
 nav li a{
@@ -44,11 +45,6 @@ li a:hover{
     padding: 10px 50px;
     text-align: left;
     color: white;
-}
-
-.spotify h1{
-    font-size: 75px;
-    color: rgba(30,215,96,255);
 }
 
 .spotify a{
@@ -85,9 +81,12 @@ li a:hover{
     font-weight: 700;
 }
 
+.profile a:hover{
+    color: rgba(30,215,96,255);
+}
+
 .profile ul{
     list-style-type: none;
-
 }
 
 .profile ul li{
@@ -102,6 +101,10 @@ li a:hover{
 
 #bullet{
     font-size: 12px;
+}
+
+.profilewrap{
+    padding-top: 50px
 }
 
 .pubplay{
@@ -121,6 +124,7 @@ li a:hover{
     display: flex;
     overflow-x: auto;
     margin-top: -90px;
+    margin-left: 5px;
 }
 
 .musicwrapper::-webkit-scrollbar{
@@ -133,4 +137,135 @@ li a:hover{
     line-height: 110px;
     text-align: center;
     margin-right: 30px;
+}
+
+.artists{
+    color: rgba(255,255,255,255);
+}
+
+.artists h1{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    left: 55px;
+    font-size: 25px;
+}
+
+
+.artistsprofile img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.artistsprofile{
+    position: relative;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.artistsprofile p{
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+#label{
+    color: rgba(167,167,167,255);
+    font-weight: 500;
+}
+
+.toptracks{
+    color: rgba(255,255,255,255);
+}
+
+.toptracks h1{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    left: 55px;
+    font-size: 25px;
+}
+
+.toptracks img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3%;
+    
+}
+
+.toptracks a{
+    text-decoration: none;
+    color: rgba(255,255,255,255);
+}
+
+.toptracks a:hover{
+    color: rgba(30,215,96,255);
+}
+
+.toptracks p{
+    font-weight: bold;
+}
+
+.trackimg{
+    position: relative;
+    display: inline-block;
+    margin-left: 35px;
+    padding: 0px 20px;
+}
+
+.topalbum{
+    color: rgba(255,255,255,255);
+}
+
+.topalbum h1{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    left: 55px;
+    font-size: 25px;
+}
+
+.topalbum iframe{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 3%;
+    margin-left: 55px
+}
+
+.concert{
+    color: rgba(255,255,255,255);
+}
+
+.concert h1{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    left: 55px;
+    font-size: 25px;
+}
+
+.concert p{
+    margin-left: 55px;
+}
+
+.concert a{
+    text-decoration: none;
+    color: rgba(255,255,255,255);
+}
+
+.concert a:hover{
+    color: rgba(30,215,96,255);
+}
+
+.concert iframe{
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    padding: 10px 55px;
 }
