@@ -1,0 +1,136 @@
+.music{
+    background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
+}
+
+.resume{
+    background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
+}
+
+.hobbies{
+    background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+
+nav ul li{
+    text-align: right;
+    display: inline-block;
+}
+
+nav li a{
+    display: block;
+    color: rgb(178,178,170);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgba(30,215,96,255);
+}
+
+#onpage{
+    color: rgba(30,215,96,255);
+}
+
+.spotify{
+    padding: 10px 50px;
+    text-align: left;
+    color: white;
+}
+
+.spotify h1{
+    font-size: 75px;
+    color: rgba(30,215,96,255);
+}
+
+.spotify a{
+    text-decoration: none;
+    color: rgba(30,215,96,255);
+}
+
+#pfp{
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(65, 64, 64, 0.041),0 0 50px rgb(114, 112, 112);
+}
+
+.profile p{
+    position: relative;
+    bottom: 190px;
+    left: 280px;
+    color: rgba(255,255,255,255);
+    font-weight: bold;
+}
+
+.profile a{
+    position: relative;
+    bottom: 190px;
+    left: 278px;
+    color: rgba(255,255,255,255);
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.profile ul{
+    list-style-type: none;
+
+}
+
+.profile ul li{
+    display: inline-block;
+    color: rgba(255,255,255,255);
+    position: relative;
+    bottom: 150px;
+    left: 240px;
+    top: -168px;
+    
+}
+
+#bullet{
+    font-size: 12px;
+}
+
+.pubplay{
+    position: relative;
+    bottom: 100px;
+    left: 55px;
+    color: rgba(255,255,255,255);
+    font-size: 25px;
+    font-weight: bold;
+    bottom: 100px;
+}
+
+.musicwrapper{
+    position: static;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    overflow-x: auto;
+    margin-top: -90px;
+}
+
+.musicwrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+#playlist{
+    min-width: 300px;
+    height: 400px;
+    line-height: 110px;
+    text-align: center;
+    margin-right: 30px;
+}
