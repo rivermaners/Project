@@ -34,39 +34,32 @@ nav li a{
 }
 
 li a:hover{
-    color: rgba(30,215,96,255);
+    color: rgba(30,215,96,255); 
 }
 
 #onpage{
-    color: rgba(30,215,96,255);
+    color: rgba(30,215,96,255); 
 }
 
-.spotify{
-    padding: 10px 50px;
-    text-align: left;
-    color: white;
-}
-
-.spotify a{
-    text-decoration: none;
-    color: rgba(30,215,96,255);
+.navborder{
+    border-style: solid;
+    color: rgb(178,178,170);
 }
 
 #pfp{
     position: relative;
     object-fit: cover;
+    padding: 0px 50px;
+    top: 40px;
     width: 200px;
     height: 200px;
-    margin-left: 50px;
-    background: white;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(65, 64, 64, 0.041),0 0 50px rgb(114, 112, 112);
 }
 
 .profile p{
     position: relative;
-    bottom: 190px;
-    left: 280px;
+    padding: 20px 281px;
+    bottom: 160px;
     color: rgba(255,255,255,255);
     font-weight: bold;
 }
@@ -74,6 +67,7 @@ li a:hover{
 .profile a{
     position: relative;
     bottom: 190px;
+    padding-left: 0px;
     left: 278px;
     color: rgba(255,255,255,255);
     text-decoration: none;
@@ -82,7 +76,7 @@ li a:hover{
 }
 
 .profile a:hover{
-    color: rgba(30,215,96,255);
+    color: rgba(30,215,96,255); 
 }
 
 .profile ul{
@@ -95,8 +89,7 @@ li a:hover{
     position: relative;
     bottom: 150px;
     left: 240px;
-    top: -168px;
-    
+    top: -169px;
 }
 
 #bullet{
@@ -104,13 +97,13 @@ li a:hover{
 }
 
 .profilewrap{
-    padding-top: 50px
+    padding-top: 10px
 }
 
 .pubplay{
     position: relative;
     bottom: 100px;
-    left: 55px;
+    padding: 0px 55px;
     color: rgba(255,255,255,255);
     font-size: 25px;
     font-weight: bold;
@@ -119,12 +112,14 @@ li a:hover{
 
 .musicwrapper{
     position: static;
-    width: 100%;
+    width: 93%;
     padding: 0px 50px;
     display: flex;
     overflow-x: auto;
+    overscroll-behavior-inline: contain;
     margin-top: -90px;
     margin-left: 5px;
+
 }
 
 .musicwrapper::-webkit-scrollbar{
@@ -145,9 +140,7 @@ li a:hover{
 
 .artists h1{
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    left: 55px;
+    padding: 25px 55px;
     font-size: 25px;
 }
 
@@ -158,6 +151,7 @@ li a:hover{
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+    top: -15px;
 }
 
 .artistsprofile{
@@ -166,9 +160,14 @@ li a:hover{
     margin-left: 55px;
 }
 
+.artistsprofile img:hover{
+    transform: scale(1.1);
+}
+
 .artistsprofile p{
     margin-left: 2px;
     font-weight: bold;
+    margin-top: -1px;
 }
 
 #label{
@@ -182,9 +181,7 @@ li a:hover{
 
 .toptracks h1{
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    left: 55px;
+    padding: 0px 55px;
     font-size: 25px;
 }
 
@@ -223,9 +220,7 @@ li a:hover{
 
 .topalbum h1{
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    left: 55px;
+    padding: 0px 55px;
     font-size: 25px;
 }
 
@@ -244,9 +239,7 @@ li a:hover{
 
 .concert h1{
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    left: 55px;
+    padding: 0px 55px;
     font-size: 25px;
 }
 
@@ -256,16 +249,281 @@ li a:hover{
 
 .concert a{
     text-decoration: none;
-    color: rgba(255,255,255,255);
+    color: rgba(30,215,96,255); 
 }
 
-.concert a:hover{
-    color: rgba(30,215,96,255);
-}
 
 .concert iframe{
     position: relative;
-    height: 600px;
+    height: 562px;
     width: 1000px;
     padding: 10px 55px;
+}
+
+.fullwrap{
+    color: rgba(255,255,255,255);
+}
+
+.hobbieswrap h1{
+    position: relative;
+    padding: 25px 55px;
+    font-size: 25px;
+    margin-bottom: -20px;
+    font-weight: bold;
+}
+
+
+#hobbylist{
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+    padding: 0px 30px;
+    padding-left: 57px;
+    top: -5px;
+}
+
+#hobbylist:hover{
+    color: rgba(30,215,96,255); 
+    transform: scale(1.5);
+}
+
+.border{
+    border-style: solid;
+    margin-right: 55px;
+    margin-left: 55px;
+    color: rgb(178,178,170);
+}
+
+.sportswrap{
+    padding: 5px 55px;
+}
+
+.sportswrap h1{
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.sportswrap p{
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+
+.sportswrap a{
+    text-decoration: none;
+    color: rgba(30,215,96,255);
+}
+
+.profevents{
+    padding: 5px 55px;
+}
+
+.profevents img{
+    position: relative;
+    display: inline-block;
+    border-radius: 3%;
+    width: 365px;
+    height: 500px;
+}
+
+.profevents h2{
+    margin-left: 50px;
+}
+
+.events{
+    padding-top: 73px;
+}
+
+.events h2{
+    position: relative;
+    padding-left: 89px;
+    top: -80px;
+    font-size: 25px;
+}
+
+.events ul{
+    display: flex;
+    padding-left: 65px;
+    list-style: none;
+    margin-top: -110px;
+    position: relative;
+    flex-direction: row;
+    
+}
+
+.events ul li{
+    padding: 20px 2px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.events li:hover{
+    transform: scale(1.2);
+}
+
+#eventbullet{
+    display: flex;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.profevents iframe{
+    display: flex;
+    position: relative;
+    top: -608px;
+    left: 500px;
+    width: 840px;
+    height: 500px;
+}
+
+#racedetails{
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    padding-left: 750px;
+}
+
+#racedetails2{
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    padding-left: 785px;
+}
+
+.racewrap{
+    margin-top: -600px;
+}
+
+#gameheader{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 57px;
+}
+
+.rankswrap{
+    padding-left: 55px;
+    text-align: center;
+}
+
+.ranks img{
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: auto;
+    top: -15px;
+}
+
+.ranks img:hover{
+    transform: scale(1.2)
+}
+
+.ranks{
+    position: relative;
+    display: inline-block;
+    margin-left: 55px;
+    margin-right: 170px;
+}
+
+.ranks p{
+    margin-left: -50px;
+    font-weight: bold;
+    margin-top: -1px;
+}
+
+#val{
+    margin-bottom: -20px;
+    margin-left: -40px;
+}
+
+#rocket{
+    margin-left: -50px;
+    top: -30px;
+}
+
+#lol{
+    height: 195px;
+    width: auto;
+    margin-bottom: -10px;
+    margin-left: -55px;
+}
+
+#game{
+    font-weight: 500;
+}
+
+.lolwrap{
+    padding-left: 25px;
+}
+
+.mangawrap{
+    padding: 5px 55px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.mangacoverwrap{
+    text-align: center;
+}
+
+.mangacover{
+    display: inline-block;
+}
+
+.mangacover img{
+    position: relative;
+    width: 250px;
+    height: 392.66px;
+    padding: 10px 20px;
+}
+
+.mangacover img:hover{
+    transform: scale(1.1);
+}
+
+.indexwrap{
+    color: rgba(255,255,255,255);
+    font-weight: bold;
+}
+
+.contact p{
+    padding: 0px 55px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: rgba(30,215,96,255); 
+}
+
+.indexwrap h2{
+    position: relative;
+    font-size: 25px;
+    padding: 0px 55px;
+}
+
+.resume h1{
+    color: rgba(255,255,255,255);
+    padding: 0px 55px;
+    font-weight: bold;
+}
+
+#classof{
+    color: rgb(178,178,170);
+    font-weight: 500;
+}
+
+#unorderlist{
+    padding: 0px 75px;
+}
+
+#unorderlist p{
+    color: rgb(178,178,170);
+    font-weight: 500;
+}
+
+.indexwrap ul li{
+    margin-bottom: 10px;
 }
