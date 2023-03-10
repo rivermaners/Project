@@ -510,7 +510,7 @@ li a:hover{
     font-weight: bold;
 }
 
-#classof{
+.classof ul{
     color: rgb(178,178,170);
     font-weight: 500;
 }
