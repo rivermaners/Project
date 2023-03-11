@@ -515,13 +515,14 @@ li a:hover{
     font-weight: 500;
 }
 
-#unorderlist{
-    padding: 0px 75px;
+.unorderlist{
+    padding: 0px 35px;
 }
 
-#unorderlist p{
+.unorderlist p{
     color: rgb(178,178,170);
     font-weight: 500;
+
 }
 
 .indexwrap ul li{
