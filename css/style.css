@@ -1,12 +1,4 @@
-.music{
-    background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
-}
-
-.resume{
-    background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
-}
-
-.hobbies{
+body{
     background-image: linear-gradient(rgba(116,116,116,255), rgba(23,23,23,255), rgba(23,23,23,255));
 }
 
@@ -496,6 +488,11 @@ li a:hover{
 .contact a{
     text-decoration: none;
     color: rgba(30,215,96,255); 
+}
+
+.indexwrap h1{
+    position: relative;
+    padding: 0px 55px;
 }
 
 .indexwrap h2{
