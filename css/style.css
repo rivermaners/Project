@@ -510,9 +510,16 @@ li a:hover{
     font-weight: bold;
 }
 
-.classof ul{
+.unorderlist ul li:nth-child(even){
     color: rgb(178,178,170);
     font-weight: 500;
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.skills{
+    padding: 0px 35px;
 }
 
 .unorderlist{
