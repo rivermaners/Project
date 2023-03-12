@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   </head>
-  <body class="hobbies">
+  <body>
     <nav>
       <ul>
         <li><a href="index.html">Resume</a></li>
@@ -19,13 +19,15 @@
       <div class="hobbieswrap">
         <h1>Hobbies</h1>
         <div class="hobbyborder">
-          <p id="hobbylist">Video Games</p>
-          <p id="hobbylist">Swimming and Diving</p>
-          <p id="hobbylist">Skateboarding</p>
-          <p id="hobbylist">Drumming</p>
-          <p id="hobbylist">Keyboard Building</p>
-          <p id="hobbylist">Manga</p>
-          <p id="hobbylist">Biking</p>
+          <div class="hobbylist">
+            <p>Video Games</p>
+            <p>Swimming and Diving</p>
+            <p>Skateboarding</p>
+            <p>Drumming</p>
+            <p>Keyboard Building</p>
+            <p>Manga</p>
+            <p>Biking</p>
+          </div>
         </div>
       </div>
       <div class="border"></div>
@@ -54,9 +56,9 @@
           <h2>Events</h2>
           <ul>
             <li>50 free</li>
-            <span id="eventbullet">&#x2022;</span>
+            <li>&#x2022;</li>
             <li>100 free</li>
-            <span id="eventbullet">&#x2022;</span>
+            <li>&#x2022;</li>
             <li>200 free</li>
           </ul>
         </div>
@@ -65,33 +67,34 @@
           height="538"
           src="https://www.youtube.com/embed/CrlLiUQNuM4"
           title="400 Medley Relay - Freestyle Leg , Lane 2"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
         <div class="racewrap"></div>
-        <p id="racedetails">400 Medley Relay against Lake Forest College</p>
-        <p id="racedetails2">Lane 2 at the bottom, 47.90s 100 free</p>
+        <div class="detailswrap">
+          <p id="racedetails">400 Medley Relay against Lake Forest College</p>
+          <p id="racedetails2">Lane 2 at the bottom, 47.90s 100 free</p>
+        </div>
       </div>
       <div class="border"></div>
-        <h1 id="gameheader">Video Games</h1>
-        <div class="rankswrap">
+      <h1 id="gameheader">Video Games</h1>
+      <div class="rankswrap">
         <div class="ranks">
           <img id="val" src="images/valrank.jpg" alt="Ascendant" />
-          <p id="gamerank">Rank: Ascendant II</p>
-          <p id="game">Valorant</p>
+          <p>Rank: Ascendant II</p>
+          <p>Valorant</p>
         </div>
         <div class="ranks">
           <img id="rocket" src="images/rocketrank.png" alt="Grand Champ" />
-          <p id="gamerank">Rank: Grand Champion III</p>
-          <p id="game">Rocket League</p>
+          <p>Rank: Grand Champion III</p>
+          <p>Rocket League</p>
         </div>
         <div class="ranks">
           <div class="lolwrap">
-          <img id="lol" src="images/lolrank.jpg" alt="Platinum" />
-          <p id="gamerank">Rank: Platinum III</p>
-          <p id="game">League of Legends</p>
-        </div>
+            <img id="lol" src="images/lolrank.jpg" alt="Platinum" />
+            <p>Rank: Platinum III</p>
+            <p>League of Legends</p>
+          </div>
         </div>
       </div>
       <div class="border"></div>
@@ -104,17 +107,18 @@
           <li><em>Fire Punch</em> by Tatsuki Fujimoto</li>
         </ol>
         <div class="mangacoverwrap">
-        <div class="mangacover">
-          <img src="images/chainsaw.jpg" alt="Chainsaw Man" />
-        </div>
-        <div class="mangacover">
-          <img src="images/jjk.jpg" alt="Jujutsu Kasien" />
-        </div>
-        <div class="mangacover">
-          <img src="images/jojo.jpg" alt="JoJo's Bizzare Adventure" />
-        </div>
-        <div class="mangacover">
-          <img src="images/firepunch.jpg" alt="Fire Punch" />
+          <div class="mangacover">
+            <img src="images/chainsaw.jpg" alt="Chainsaw Man" />
+          </div>
+          <div class="mangacover">
+            <img src="images/jjk.jpg" alt="Jujutsu Kasien" />
+          </div>
+          <div class="mangacover">
+            <img src="images/jojo.jpg" alt="JoJo's Bizzare Adventure" />
+          </div>
+          <div class="mangacover">
+            <img src="images/firepunch.jpg" alt="Fire Punch" />
+          </div>
         </div>
       </div>
     </div>

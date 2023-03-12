@@ -314,7 +314,7 @@ li a:hover{
 }
 
 
-#hobbylist{
+.hobbylist p{
     display: inline-block;
     text-align: left;
     position: relative;
@@ -324,7 +324,7 @@ li a:hover{
     top: -5px;
 }
 
-#hobbylist:hover{
+.hobbylist p:hover{
     color: rgba(30,215,96,255); 
     transform: scale(1.5);
 }
@@ -387,7 +387,7 @@ li a:hover{
 
 .events ul{
     display: flex;
-    padding-left: 65px;
+    padding-left: 70px;
     list-style: none;
     margin-top: -110px;
     position: relative;
@@ -396,28 +396,23 @@ li a:hover{
 }
 
 .events ul li{
-    padding: 20px 2px;
+    margin-top: 20px;
     margin-right: 10px;
     font-weight: bold;
 }
 
-.events li:hover{
+.events ul li:nth-child(odd):hover{
     transform: scale(1.2);
-}
-
-#eventbullet{
-    display: flex;
-    margin-top: 22px;
-    margin-right: 10px;
 }
 
 .profevents iframe{
     display: flex;
     position: relative;
-    top: -608px;
+    top: -592px;
     left: 500px;
     width: 840px;
     height: 500px;
+    border: none;
 }
 
 #racedetails{
@@ -432,6 +427,10 @@ li a:hover{
     display: flex;
     font-weight: bold;
     padding-left: 785px;
+}
+
+.detailswrap{
+    padding-top: 15px
 }
 
 .racewrap{
@@ -490,10 +489,6 @@ li a:hover{
     width: auto;
     margin-bottom: -10px;
     margin-left: -55px;
-}
-
-#game{
-    font-weight: 500;
 }
 
 .lolwrap{
