@@ -88,6 +88,10 @@ li a:hover{
     font-size: 12px;
 }
 
+#bullet2{
+    font-size: 12px;
+}
+
 .profilewrap{
     padding-top: 10px
 }
@@ -102,7 +106,7 @@ li a:hover{
     bottom: 100px;
 }
 
-.musicwrapper{
+.playlist{
     position: static;
     width: 93%;
     padding: 0px 50px;
@@ -111,19 +115,35 @@ li a:hover{
     overscroll-behavior-inline: contain;
     margin-top: -90px;
     margin-left: 5px;
-
 }
 
-.musicwrapper::-webkit-scrollbar{
-    width: 0;
-}
-
-#playlist{
+.playlist iframe{
     min-width: 300px;
     height: 400px;
     line-height: 110px;
     text-align: center;
     margin-right: 30px;
+    border: none;
+}
+
+.playlist::-webkit-scrollbar{
+    width: 0;
+}
+
+#playspace{
+    padding-right: 20px;
+}
+
+#playspace2{
+    padding-right: 20px;
+}
+
+#playspace3{
+    padding-right: 20px;
+}
+
+#playspace4{
+    padding-right: 20px;
 }
 
 .artists{
@@ -136,9 +156,9 @@ li a:hover{
     font-size: 25px;
 }
 
-
 .artistsprofile img{
     position: relative;
+    display: inline-block;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -148,8 +168,16 @@ li a:hover{
 
 .artistsprofile{
     position: relative;
-    display: inline-block;
+    display: flex;
     margin-left: 55px;
+}
+
+#space{
+    padding-right: 60px;
+}
+
+#space2{
+    padding-right: 60px;
 }
 
 .artistsprofile img:hover{
@@ -162,7 +190,7 @@ li a:hover{
     margin-top: -1px;
 }
 
-#label{
+.artistsprofile p:nth-child(odd){
     color: rgba(167,167,167,255);
     font-weight: 500;
 }
@@ -183,7 +211,6 @@ li a:hover{
     height: 200px;
     object-fit: cover;
     border-radius: 3%;
-    
 }
 
 .toptracks a{
@@ -199,11 +226,29 @@ li a:hover{
     font-weight: bold;
 }
 
-.trackimg{
+.toptracks p:nth-child(odd){
+    color: rgba(167,167,167,255);
+    font-weight: 500;
+}
+
+.tracks{
     position: relative;
-    display: inline-block;
-    margin-left: 35px;
+    display: flex;
+    margin-left: 38px;
     padding: 0px 20px;
+    padding-top: 15px;
+}
+
+#space3{
+    padding-right: 80px;
+}
+
+#space4{
+    padding-right: 80px;
+}
+
+#space5{
+    padding-right: 80px;
 }
 
 .topalbum{
@@ -217,12 +262,14 @@ li a:hover{
 }
 
 .topalbum iframe{
+    padding-top: 10px;
     position: relative;
     width: 1000px;
     height: 500px;
     object-fit: cover;
     border-radius: 3%;
-    margin-left: 55px
+    margin-left: 55px;
+    border: none;
 }
 
 .concert{
@@ -236,6 +283,7 @@ li a:hover{
 }
 
 .concert p{
+    padding-top: 5px;
     margin-left: 55px;
 }
 
@@ -250,6 +298,7 @@ li a:hover{
     height: 562px;
     width: 1000px;
     padding: 10px 55px;
+    border: none;
 }
 
 .fullwrap{
