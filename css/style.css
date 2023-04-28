@@ -324,11 +324,6 @@ li a:hover{
     top: -5px;
 }
 
-.hobbylist p:hover{
-    color: rgba(30,215,96,255); 
-    transform: scale(1.5);
-}
-
 .border{
     border-style: solid;
     margin-right: 55px;
@@ -575,4 +570,15 @@ li a:hover{
 
 .indexwrap ul li{
     margin-bottom: 10px;
+}
+
+#map{
+    width: 300px; 
+    height: 400px;
+    margin-left: 280px;
+}
+
+.mapwrapper{
+    text-align: center;
+    color: rgba(255,255,255,255);
 }
