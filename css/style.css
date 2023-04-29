@@ -490,30 +490,66 @@ li a:hover{
     padding-left: 25px;
 }
 
-.mangawrap{
-    padding: 5px 55px;
-    font-weight: bold;
-    padding-bottom: 50px;
+.mangawrap h1{
+    margin-left: 55px;
 }
 
-.mangacoverwrap{
-    text-align: center;
-}
-
-.mangacover{
-    display: inline-block;
-}
-
-.mangacover img{
+#slider {
     position: relative;
-    width: 250px;
-    height: 392.66px;
-    padding: 10px 20px;
-}
+    width: 435px;
+    height: 650px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+  }
 
-.mangacover img:hover{
-    transform: scale(1.1);
-}
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin-left: 55px;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+  }
+
+  #slider ul li img{
+    width: 382px;
+    height: 600px;
+  }
+
+  #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+  }
+
+  #slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+  
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
 
 .indexwrap{
     color: rgba(255,255,255,255);
@@ -573,12 +609,40 @@ li a:hover{
 }
 
 #map{
-    width: 300px; 
-    height: 400px;
-    margin-left: 280px;
+    width: 1000px; 
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 300px;
 }
 
 .mapwrapper{
     text-align: center;
     color: rgba(255,255,255,255);
 }
+
+.mapwrapper p{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+    nav ul{
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+@media(min-width: 1000px){
+    .index{
+        font-size: 15px;
+        text-align: left;
+        background-image: no-repeat;
+        display: block;
+        margin: 0;
+      }
+}
+
