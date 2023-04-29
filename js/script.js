@@ -1,26 +1,76 @@
 let map;
 
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: 40.71823902852354, lng: -73.99581972249696 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+let myLocation = {lat: 40.71823902852354, lng: -73.99581972249696 };
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
+function initMap(){
+  map = new google.maps.Map(document.getElementById("map"), {
+		center: myLocation,
+		zoom: 12,
   });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerView({
-    map: map,
-    position: position,
-    title: "Uluru",
+  let marker = new google.maps.Marker({
+		position: myLocation,
+		map: map,
+		title: 'The best Chinese noodles in New York',
+    animation: google.maps.Animation.BOUNCE,
+    icon: 'images/map_marker.png',
   });
 }
 
 initMap();
+
+var responsiveSlider = function() {
+
+  var slider = document.getElementById("slider");
+  var sliderWidth = slider.offsetWidth;
+  var slideList = document.getElementById("slideWrap");
+  var count = 1;
+  var items = slideList.querySelectorAll("li").length;
+  var prev = document.getElementById("prev");
+  var next = document.getElementById("next");
+  
+  window.addEventListener('resize', function() {
+    sliderWidth = slider.offsetWidth;
+  });
+  
+  var prevSlide = function() {
+    if(count > 1) {
+      count = count - 2;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = 1) {
+      count = items - 1;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+  };
+  
+  var nextSlide = function() {
+    if(count < items) {
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = items) {
+      slideList.style.left = "0px";
+      count = 1;
+    }
+  };
+  
+  next.addEventListener("click", function() {
+    nextSlide();
+  });
+  
+  prev.addEventListener("click", function() {
+    prevSlide();
+  });
+  
+  setInterval(function() {
+    nextSlide()
+  }, 8000);
+  
+  };
+  
+  window.onload = function() {
+  responsiveSlider();  
+  }
