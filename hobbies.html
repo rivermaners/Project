@@ -5,6 +5,7 @@
     <title>Hobbies</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script async src="js/script.js"></script>
   </head>
   <body>
     <nav>
@@ -101,25 +102,15 @@
       <div class="border"></div>
       <div class="mangawrap">
         <h1>Favorite Manga</h1>
-        <ol>
-          <li><em>Chainsaw Man</em> by Tatsuki Fujimoto</li>
-          <li><em>Jujutsu Kaisen</em> by Gege Akutami</li>
-          <li><em>JoJo's Bizzare Adventure</em> by Hirohiko Araki</li>
-          <li><em>Fire Punch</em> by Tatsuki Fujimoto</li>
-        </ol>
-        <div class="mangacoverwrap">
-          <div class="mangacover">
-            <img src="images/chainsaw.jpg" alt="Chainsaw Man" />
-          </div>
-          <div class="mangacover">
-            <img src="images/jjk.jpg" alt="Jujutsu Kasien" />
-          </div>
-          <div class="mangacover">
-            <img src="images/jojo.jpg" alt="JoJo's Bizzare Adventure" />
-          </div>
-          <div class="mangacover">
-            <img src="images/firepunch.jpg" alt="Fire Punch" />
-          </div>
+        <div id="slider">
+          <ul id="slideWrap">
+            <li><img src="images/chainsaw.jpg" alt="chainsaw man" /></li>
+            <li><img src="images/jjk.jpg" alt="jjk" /></li>
+            <li><img src="images/jojo.jpg" alt="jojo" /></li>
+            <li><img src="images/firepunch.jpg" alt="firepunch" /></li>
+          </ul>
+          <a id="prev" href="#">&#8810;</a>
+          <a id="next" href="#">&#8811;</a>
         </div>
       </div>
     </div>
