@@ -524,20 +524,6 @@ li a:hover{
     height: 600px;
   }
 
-  #slider #prev, #slider #next {
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    border-radius: 50%;
-    font-size: 2rem;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    transform: translateY(-50%);
-    transition: all 150ms ease;
-  }
 
   #slider #prev {
     left: 10px;
@@ -640,7 +626,7 @@ li a:hover{
     .index{
         font-size: 15px;
         text-align: left;
-        background-image: no-repeat;
+        background-image: cover;
         display: block;
         margin: 0;
       }
